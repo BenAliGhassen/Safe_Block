@@ -1,0 +1,15 @@
+{
+  "manifest_version": 3,
+  "name": "SafeBlock",
+  "version": "1.0",
+  "description": "Blocks content",
+  "permissions": ["activeTab", "storage", "scripting", "declarativeNetRequest", "webNavigation"],
+  "host_permissions": ["<all_urls>"],
+  "background": {
+    "service_worker": "src/background.js"
+  },
+  "action": {
+    "default_popup": "index.html",
+    "default_title": "Keyword Redirect"
+  }
+}
